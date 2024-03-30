@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     flex: 1,
+    maxWidth: '50%',
   },
   image: {
     width: '100%',
