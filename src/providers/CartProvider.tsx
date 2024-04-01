@@ -58,13 +58,13 @@ const CartProvider = ({ children, }: PropsWithChildren) => {
 
   return (
     <CartContext.Provider 
-        value={{
-            items,
-            addItem,
-            updateQuantity,
-        }}
+      value={{
+        items,
+        addItem,
+        updateQuantity,
+      }}
     >
-        {children}
+      {children}
     </CartContext.Provider>
   );
 };

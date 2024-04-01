@@ -3,6 +3,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { useCart, } from '@/providers/CartProvider';
 import CartListItem from '@/components/CartListItem';
+import Button from '@/components/Button';
 
 const CartScreen = () => {
   const { items, } = useCart();
@@ -14,6 +15,8 @@ const CartScreen = () => {
         renderItem={({item}) => <CartListItem cartItem={item} />}
         contentContainerStyle={{ padding: 10, gap: 10, }}
       />
+
+      <Button text="Checkout" />
 
       <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
     </View>
